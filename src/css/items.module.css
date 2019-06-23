@@ -1,0 +1,42 @@
+.effects {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.overview {
+  display: inline-block;
+  width: 75vw;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.center {
+  width: 89vw;
+  margin: 3rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-column-gap: 32px;
+  grid-row-gap: 2rem;
+
+}
+
+.btn-feature {
+  background: var(--primaryColor);
+  color: var(--mainWhite);
+  border: 2px solid var(--primaryColor);
+  margin-top: 1rem;
+}
+
+
+@media screen and (min-width: 576px) {
+  .center {
+    grid-template-columns: repeat(auto-fill, minmax(368.66px, 1fr));
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .center {
+    width: 100%;
+    max-width: 1170px;
+  }
+}

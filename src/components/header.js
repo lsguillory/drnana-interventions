@@ -2,12 +2,12 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
-const Header = ({ siteTitle }) => (
+const Header = () => ( //siteTitle is the prop or object with values being passed to React
   <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
+    // style={{
+    //   background: `rebeccapurple`,
+    //   marginBottom: `1.45rem`,
+    //}}
   >
     <div
       style={{
@@ -24,7 +24,7 @@ const Header = ({ siteTitle }) => (
             textDecoration: `none`,
           }}
         >
-          {siteTitle}
+         
         </Link>
       </h1>
     </div>
