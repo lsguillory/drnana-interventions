@@ -1,5 +1,5 @@
 
-/* import React from 'react'
+ import React from 'react'
 
 const Template = () => {
  return 
@@ -9,4 +9,4 @@ const Template = () => {
 }
 
 export default Template
- */
+ 
