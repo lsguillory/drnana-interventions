@@ -23,12 +23,12 @@ const StyledHero = ({ img, className, children, home }) => {
  const data =useStaticQuery(getImage);
  return (
 
-  <div>
+ 
    <BackgroundImage className={className} fluid={img || 
    data.background.childImageSharp.fluid} home= {home}> 
       {children}
    </BackgroundImage>
-  </div>
+
  )
  }
 

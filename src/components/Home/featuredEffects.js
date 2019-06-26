@@ -28,7 +28,7 @@ featuredEffects:allContentfulEffectIntervention(filter:{featured:{eq:true}}) {
         }
         image {
           fluid {
-           ...GatsbyContentfulFluid_tracedSVG
+           ...GatsbyContentfulFluid
           }
         }  
       }
@@ -46,7 +46,7 @@ const effects = response.featuredEffects.edges
  
 return (
   <section className={styles.effects}>
-  <Title title='featured' subtitle='effects | interentions'/>
+  <Title title='featured' subtitle='effects | interventions'/>
   <div className={styles.overview}>
  Pickled roof party gluten-free vice. You probably haven't heard of them cold-pressed mustache retro irony selvage ramps authentic keffiyeh lumbersexual green juice. Banh mi raclette next level, butcher activated charcoal meh glossier yuccie lomo shabby chic craft beer. Blue bottle actually activated charcoal coloring book, adaptogen fam pinterest try-hard shaman kickstarter four loko iPhone twee YOLO.
   </div>

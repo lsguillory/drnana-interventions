@@ -1,10 +1,12 @@
  import React from 'react'
 import Image from 'gatsby-image'
 import styles from '../../css/effect.module.css'
-import {FaMap} from 'react-icons/fa'
+import {FaBookReader} from 'react-icons/fa'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import { useStaticQuery, graphql } from "gatsby"
-//import PropTypes from "prop-types"
+
+
+//import PropTypes from "prop-types" optional as all in contentful 'isrequired'
 
 const getImage = graphql`
 query {
@@ -12,7 +14,7 @@ query {
  file(relativePath: { eq: "book4.jpg"}) {
   childImageSharp {
    fluid {
-    ...GatsbyImageSharpFluid_tracedSVG
+    ...GatsbyImageSharpFluid
    }
   }
  }
@@ -25,7 +27,7 @@ const Effect = ({ effect }) => {
  const img = data.file.childImageSharp.fluid
 
  const {name, slug, techniques, image} = effect
- //console.log(image);
+ console.log(data);
 /* let mainImage
  if (image) {
    mainImage = image[0].fluid
@@ -50,7 +52,7 @@ let mainImage = image ? image[0].fluid : img
    </div>
    
   <div>
-   <FaMap className={styles.icon} />
+   <FaBookReader className={styles.icon} />
     <h5>intervention: {techniques[0] || 'default vlaue'}</h5>
    </div>
   

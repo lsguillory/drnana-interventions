@@ -90,6 +90,7 @@
 .icon {
   margin-right: 0.4rem;
   color: var(--primaryColor);
+  font-size: 1.5rem;
 }
 
 .details {
