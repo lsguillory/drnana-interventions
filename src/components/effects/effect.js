@@ -27,7 +27,7 @@ const Effect = ({ effect }) => {
  const img = data.file.childImageSharp.fluid
 
  const {name, slug, techniques, image} = effect
- console.log(data);
+ //console.log(data);
 /* let mainImage
  if (image) {
    mainImage = image[0].fluid

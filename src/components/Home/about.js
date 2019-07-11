@@ -41,7 +41,7 @@ const About = () => {
      <p>Sit excepturi eos, quisquam aspernatur illum ullam velit modi cum harum exercitationem?</p>
      <p>Laborum tempora nihil error. Sit amet consectetur adipisicing elit.</p>
     
-  <AniLink fade to='/404' className='btn-primary'>
+  <AniLink fade to="/about" className='btn-primary'>
    Read More
   </AniLink>
    </article>
