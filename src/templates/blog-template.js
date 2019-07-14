@@ -33,7 +33,7 @@ const Blog = ({ data }) => {
      <br/>
      <br/>
       <h1>this is the other post : {title['en-US']}</h1>
-      <img width='500' src={image['en-US'].fields.file['en-US'].url} alt='decorative image' />
+      <img width='500' src={image['en-US'].fields.file['en-US'].url} alt="" />
       {documentToReactComponents(text['en-US'])}
       <br/>
       <br/>
