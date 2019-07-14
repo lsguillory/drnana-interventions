@@ -8,12 +8,13 @@ import Banner from "../components/banner"
 import About from '../components/Home/about'
 import Services from '../components/Home/services'
 import StyledHero from '../components/styledHero'
-//import SEO from "../components/seo"
+import SEO from "../components/seo"
 import {graphql} from 'gatsby'
 import FeaturedEffects from '../components/Home/featuredEffects'
 
 export default ({data}) => (
   <Layout>
+  <SEO title='Home' />
     <StyledHero home='true' img={data.background.childImageSharp.fluid}>
     {/* banner in center of simpleHero */}
       <Banner

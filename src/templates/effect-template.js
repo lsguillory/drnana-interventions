@@ -1,8 +1,8 @@
 
 import React from 'react'
 import {graphql} from 'gatsby'
-import Layout from '../components/Layout';
-import StyledHero from '../components/StyledHero' //top background image 
+import Layout from '../components/layout';
+import StyledHero from '../components/styledHero' //top background image 
 import styles from '../css/template.module.css'
 import Img from 'gatsby-image'
 import {FaBookReader} from 'react-icons/fa';

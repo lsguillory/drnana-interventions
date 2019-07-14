@@ -1,6 +1,6 @@
 import React from 'react'
 import BlogCard from './blogCard'
-import Title from '../Title'
+import Title from '../title'
 import {useStaticQuery, graphql} from 'gatsby'
 import styles from '../../css/blog.module.css'
 

@@ -9,6 +9,9 @@ module.exports = {
     title: `Teacher Efficacy`,
     description: `Resources to increase level of efficacy in facilitating student learning and managing classrooms more effectively.`,
     author: `@lsguillory`,
+    twitterUsername: '@DrLindaGuillory',
+    image: '.static/anxiety.jpg',
+    siteUrl: 'https://drnana-interventions.netlify.com',
     data: {
       item1: 'stereotype threat interventions',
       item2: 'classroom management',
