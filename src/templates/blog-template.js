@@ -74,7 +74,6 @@ query getPost($slug: String!) {
 }
 
 `
-
 export default Blog
 
 // see gatsby-node.js
