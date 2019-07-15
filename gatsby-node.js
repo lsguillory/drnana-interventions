@@ -71,7 +71,7 @@ Array.from({ length: numPages }).forEach((_,i) => {
       limit:postsPerPage,
       skip:i * postsPerPage,
       numPages,
-      currntPage:i + 1,
+      currentPage:i + 1,
     },
   })
 })

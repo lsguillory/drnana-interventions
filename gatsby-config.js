@@ -6,7 +6,7 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Teacher Efficacy`,
+    title: `Teacher Efficacy`, //consider 'intrventions as title
     description: `Resources to increase level of efficacy in facilitating student learning and managing classrooms more effectively.`,
     author: `@lsguillory`,
     twitterUsername: '@DrLindaGuillory',
@@ -23,6 +23,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -37,6 +38,15 @@ module.exports = {
         spaceId: `exemi0rdx5vj`,   //process.env.CONTENTFUL_SPACE_ID,  
         // Learn about environment variables: https://gatsby.dev/env-vars
         accessToken: "QeBXgBLr1GMX2aJRXTn7uPpUTTn-uCtQevHb3sDcrqE",     //process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    },
+
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://drnana-interventions.netlify.com',
+        sitemap: 'https://drnana-interventions.netlify.com/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }],
       },
     },
     

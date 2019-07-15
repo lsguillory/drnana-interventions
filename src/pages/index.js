@@ -1,7 +1,6 @@
 import React from "react"
 //import { Link } from "gatsby"
-import AniLink from "gatsby-plugin-transition-link/AniLink";
-
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Layout from '../components/layout'
 //import SimpleHero from '../components/simpleHero' //used on all pages keep as separate component
 import Banner from "../components/banner"

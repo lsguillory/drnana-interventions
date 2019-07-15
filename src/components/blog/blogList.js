@@ -3,6 +3,8 @@ import BlogCard from './blogCard'
 import Title from '../title'
 import {useStaticQuery, graphql} from 'gatsby'
 import styles from '../../css/blog.module.css'
+//import SEO from '../components/seo'
+//import Layout from '../components/layout'
 
 const getPosts = graphql`
 query {
@@ -34,6 +36,9 @@ const BlogList = () => {
   // Hello from BLOGLIST
   // <BlogCard />
  // </div> 
+ 
+  
+ 
   <section className={styles.blog}>
 <Title title="our" subtitle="blogs" />
 <div className={styles.center}>
@@ -42,6 +47,7 @@ const BlogList = () => {
 })}
 </div>
   </section>
+  
  )
 }
 

@@ -8,7 +8,7 @@ import Img from 'gatsby-image'
 import {FaBookReader} from 'react-icons/fa';
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import Day from '../components/intervention/day'
-
+import SEO from '../components/seo'
 
  const Template = ({data}) => {
 
@@ -27,6 +27,7 @@ import Day from '../components/intervention/day'
   
    return (
      <Layout>
+     <SEO title={name} />
        <StyledHero img={mainImage.fluid} />
    <section className={styles.template}>
      <div className={styles.center}>
@@ -37,29 +38,32 @@ import Day from '../components/intervention/day'
         <Img key={index} fluid={item.fluid} alt='single effect' className={styles.image}/>
       )
     })}
-    
     </div>
+
+    <h2> <FaBookReader className={styles.icon} />{name}</h2>
     <div className={styles.info}>
-    <p>
-    <FaBookReader className={styles.icon} />
-    <h2>{name}</h2>
-    </p>
     
-      <p className={styles.info}> 
+     
       <h3>Overview</h3>
       {overview}
-      </p>    
+        
        </div> 
-       
-       <p> 
+       <br/>
+
+       <div> 
        <h4>Who is vulnerable?</h4>
        {vulnerability}
-       </p>
-     
-       <p> 
-        <h4>Intervention Techniques</h4>
+       <br/>
+       </div>
+
+       <div>
+       <br/>
+       <h4>Intervention Techniques</h4>
         {techniques}
-        </p>
+        <br/>
+       </div>
+     
+      
        
         <h2>Technique Description</h2>        
        
@@ -69,13 +73,14 @@ import Day from '../components/intervention/day'
             })}
           </div>
 
-          <p> 
+          <div> 
           <h4>References</h4>{miscellaneous}
-          </p>
-       
+          </div>
+       <br/>
      <AniLink fade to="/intervention" className="btn-primary">
             back to all interventions
       </AniLink> 
+     
       </div> 
     </section>
      </Layout>

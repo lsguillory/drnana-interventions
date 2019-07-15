@@ -4,12 +4,14 @@ import Layout from '../components/layout'
 //import Images from '../components/images'
 import StyledHero from '../components/styledHero'
 import {graphql} from 'gatsby'
+import SEO from '../components/seo'
 
 
 const Classroom = ({ data }) => {
 
  return (
   <Layout>
+    <SEO title='Classroom Management'/>
   <StyledHero img={data.classroom.childImageSharp.fluid} />
 
   <div>

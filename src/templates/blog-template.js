@@ -4,6 +4,7 @@ import Layout from '../components/layout'
 import styles from '../css/single-blog.module.css'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
+import SEO from '../components/seo'
 //import { node } from "prop-types";
 //import { log } from "util"
 
@@ -19,7 +20,7 @@ const Blog = ({ data }) => {
      return ( 
       <div className='rich'>
       <h3>this is awesome image</h3>
-      <img width="500" src={node.data.target.fields.file["en-US"].url} />
+      <img width="500" src={node.data.target.fields.file["en-US"].url} alt="" />
       <p>images provided by john doe</p>
      </div>
      )
@@ -47,6 +48,7 @@ const Blog = ({ data }) => {
 
  return (
   <Layout>
+    <SEO title={title}/>
    <section className={styles.blog}>
      <div className={styles.center}>
         <h1>{title}</h1>
