@@ -29,15 +29,21 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,//root-interventions/src/images
-      }
+      },
     },
     
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: `exemi0rdx5vj`,   //process.env.CONTENTFUL_SPACE_ID,  
+        //spaceId: `exemi0rdx5vj`, 
         // Learn about environment variables: https://gatsby.dev/env-vars
-        accessToken: "QeBXgBLr1GMX2aJRXTn7uPpUTTn-uCtQevHb3sDcrqE",     //process.env.CONTENTFUL_ACCESS_TOKEN,
+        //accessToken: "QeBXgBLr1GMX2aJRXTn7uPpUTTn-uCtQevHb3sDcrqE",  
+
+        //*************************************************************
+        spaceId: process.env.CONTENTFUL_SPACE_ID,  
+        // Learn about environment variables: https://gatsby.dev/env-vars
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+
       },
     },
 
