@@ -1,11 +1,36 @@
 import React from 'react'
+import Layout from '../components/layout'
+import StyledHero from "../components/styledHero"
+//import img from '../../images/word8.jpg'
 
-const about = () => {
+import { graphql } from 'gatsby'
+import About from '../components/about/about'
+import SEO from '../components/seo'
+ 
+//const About = ({ data }) => {
+ export default function about ({ data }) {
  return (
-  <div>
-   This is the ABOUT EFFUCACY page 
-  </div>
+  
+  <Layout> 
+  <SEO title='About Efficacy'/>
+ 
+  <StyledHero img={data.about.childImageSharp.fluid} />
+  <About />
+ 
+  </Layout>
  )
 }
 
-export default about
+export const query = graphql`
+query {
+  about:file(relativePath:{eq:"word8b.jpg"}) {
+    childImageSharp{
+      fluid(quality: 90, maxWidth:4160){
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
+  }
+}
+
+`
+

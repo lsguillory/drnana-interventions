@@ -7,15 +7,20 @@ export default [
  },
 
  {
+  path: '/about',
+  text: 'about efficacy',
+ }, 
+
+ {
   path: '/intervention',
   text: 'stereotype interventions',
  },
 
- {
+ /* {
   path: '/classroom',
   text: 'classroom management',
  
- },
+ }, */
 
   {
   path: '/blog',
@@ -24,9 +29,10 @@ export default [
  
  {
   path: '/blogs',
-  text: 'blogs',
+  text: 'latest posts',
  },
 
+ 
  {
   path: '/contact',
   text: 'contact',
