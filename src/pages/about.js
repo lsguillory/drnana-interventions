@@ -23,7 +23,7 @@ import SEO from '../components/seo'
 
 export const query = graphql`
 query {
-  about:file(relativePath:{eq:"word8b.jpg"}) {
+  about:file(relativePath:{eq:"interventionbck.jpg"}) {
     childImageSharp{
       fluid(quality: 90, maxWidth:4160){
         ...GatsbyImageSharpFluid_withWebp

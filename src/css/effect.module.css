@@ -4,6 +4,10 @@
 }
 
 
+.effect h1 {
+  font-size: 6rem;
+}
+
 .effect:hover {
   box-shadow: var(--darkShadow);
 }
@@ -33,6 +37,7 @@
   color: var(--mainWhite);
   border: 2px solid var(--mainWhite);
   padding: 0.9rem 1.6rem;
+  /* padding: 0.5rem 0.7rem; */
   display: inline-block;
   transition: var(--mainTransition);
   cursor: pointer;
@@ -53,11 +58,22 @@
   text-align: center;
 }
 
-.footer h3 {
+.footer h4 {
   text-transform: capitalize;
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
+  margin-bottom: .2rem;
   text-align: center;
 }
+
+.intervention {
+  text-transform: capitalize;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: "Josefin";
+}
+
 
 .info h5 {
   text-align: center;
@@ -85,6 +101,7 @@
   align-items: center;
   text-align: center;
   margin-top: 0.5rem;
+  justify-content: space-between;
 }
 
 .icon {

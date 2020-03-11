@@ -1,9 +1,122 @@
-/* specific to teaxher efficacy web */
+/* specific  stereotyp threat web */
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat|News+Cycle|Open+Sans&display=swap');
-/* @import url("https://fonts.googleapis.com/css?family=Lato|Poppins"); */
+@import url("https://fonts.googleapis.com/css?family=Lato|Poppins|Kalam|Josefin Sans");
+
+:root {
+  --primaryColor: #ca2549;
+  --secondaryColor: #77263A;
+  --mainCyan: #3fd0d4;
+  --mainPurple: #654497;
+  --mainWhite: #fff;
+  --offWhite: #f7f7f7;
+  --mainBlack: #222;
+  --mainGrey: #ececec;
+  --medGrey: #808080;
+  --darkGrey: #696969;
+  --mainTransition: all 0.3s linear;
+  --mainSpacing: 4px;
+  --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+}
 
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* reset  */
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--mainBlack);
+  background: var(--mainWhite);
+  line-height: 1.4;
+  font-size: 1.2rem;
+}
+h1 {
+  
+    font-family: "Kato", sans-serif;
+    margin-bottom: 1.25rem;
+    letter-spacing: var(--mainSpacing);
+  }
+
+
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Josefin", sans-serif;
+  margin-bottom: 1.25rem;
+  letter-spacing: var(--mainSpacing);
+}
+p {
+  margin-bottom: 1.25rem;
+}
+a {
+  text-decoration: none;
+}
+.defaultHero {
+  min-height: calc(100vh - 62px);
+  background: linear-gradient(rgba(211, 101, 101, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/code8.jpg") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-white,
+.btn-primary {
+  text-transform: uppercase;
+  letter-spacing: var(--mainSpacing);
+  color: var(--mainWhite);
+  border: 2px solid var(--mainWhite);
+  padding: 0.9rem 1.6rem;
+  display: inline-block;
+  /* transition: var(--mainTransition); */
+  transition: color 1s ease-in-out;
+  cursor: pointer;
+  font-size: .8rem;
+}
+.btn-white:hover {
+  background: var(--mainWhite);
+  color: var(--primaryColor);
+}
+.btn-primary {
+  background: var(--primaryColor);
+  color: var(--mainWhite);
+  border: 2px solid var(--primaryColor);
+}
+.btn-primary:hover {
+  background: transparent;
+  color: var(--primaryColor);
+}
+/* .gatsby-image-wrapper {
+  max-height: 600px;
+  box-shadow: var(--lightShadow);
+} */
+main {
+  min-height: 100vh;
+  display: flex;  
+  flex-direction: column;
+  
+  /* flex is auto row-change to col */
+}
+
+
+
+
+
+
+
+
+
+/* specific to teaxher efficacy web */
+
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat|News+Cycle|Open+Sans&display=swap'); */
+/* @import url("https://fonts.googleapis.com/css?family=Lato|Poppins"); */
+
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -62,9 +175,9 @@ p {
   min-height: calc(100vh - 62px);
   background: linear-gradient(rgba(10, 112, 116, 0.7), rgba(0, 0, 0, 0.7)),
     url("../images/code8.jpg") center/cover no-repeat;
-  display: flex;
+  display: flex; */
   /* //below places image in center */
-  justify-content: center;
+  /* justify-content: center;
   align-items: center;
 }
 
@@ -99,9 +212,9 @@ p {
 
 
 main {
-  min-height: 100vh;
+  min-height: 100vh; */
   /*100% of viewport */
-  display: flex;
+  /* display: flex; */
   /* by default a row --change to column below */
-  flex-direction: column;
-}
+  /* flex-direction: column;
+} */

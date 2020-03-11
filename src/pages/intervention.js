@@ -21,7 +21,7 @@ const Intervention = ({ data }) => {
 
 export const query = graphql`
 query {
- research:file(relativePath:{eq:"interventionbck.jpg"}){
+ research:file(relativePath:{eq:"hiddenFig.jpg"}){
     childImageSharp{
       fluid(quality:90, maxWidth:4160){
         ...GatsbyImageSharpFluid_withWebp

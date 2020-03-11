@@ -1,15 +1,26 @@
 import React from 'react'
 import Title from '../title'
-import styles from '../../css/about.module.css'
+import styles from '../../css/overview.module.css'
+//import styles from '../../css/overview.module.css'
+//import {useStaticQuery, graphql} from 'gatsby'
 
 
-const About = () => {
+
+const Overview = () => {
+
  return ( 
- <section className={styles.about}>
-  <Title title="about" subtitle="stereotype threat" />
  
+  /* replace with section below
+ <div>
+    This is the Overview: Stereotype Threat Page
+  </div>
+ */
+  <section className={styles.overview}>
 
-<article className={styles.aboutArticle}> 
+  <Title title="overview:" subtitle="stereotype threat" /> 
+  
+
+  <article className={styles.overviewArticle}> 
 
 <p>Four loko kinfolk typewriter kitsch echo park twee 90's celiac. Mixtape hell of pickled authentic pok pok aesthetic, selvage green juice vegan humblebrag artisan readymade portland. Gochujang etsy iceland +1 prism meh. Sustainable schlitz flexitarian raw denim, master cleanse enamel pin iPhone semiotics tilde. Fam locavore yuccie gentrify chambray celiac snackwave knausgaard normcore godard migas selfies trust fund keytar. Locavore drinking vinegar vaporware bushwick street art XOXO seitan cloud bread art party. Marfa 3 wolf moon mixtape actually etsy neutra.</p>
 
@@ -27,4 +38,10 @@ const About = () => {
  )
 }
 
-export default About
+
+export default Overview
+
+ 
+  
+ 
+ 

@@ -5,7 +5,9 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { FaAlignRight } from 'react-icons/fa'
 import links from '../constants/links'
 import socialIcons from '../constants/social-icons'
-import logo from '../images/logo.png'
+// import logo from '../images/logo.png'
+import logo from "../images/stlogo1.jpg"
+
 
 const Navbar = () => {
   const [isOpen, setNav] = useState(false) //Hook -isOpen true/false

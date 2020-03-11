@@ -1,19 +1,26 @@
 
 
 export default [
+
+
  {
   path: '/',
   text: 'home',
  },
 
+ // {
+ //  path: '/about',
+ //  text: 'about efficacy',
+ // }, 
+
  {
   path: '/about',
-  text: 'about efficacy',
- }, 
+  text: 'about ST',
+ },
 
  {
   path: '/intervention',
-  text: 'stereotype interventions',
+  text: 'ST effects',
  },
 
  /* {

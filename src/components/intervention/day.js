@@ -3,7 +3,7 @@ import { FaAngleDown } from "react-icons/fa"
 import styles from "../../css/day.module.css"
 
 
-
+//DAY = single effect page "Technique Description Information"
 
 const Day = ({ type, info, }) => {
  const [showInfo, setInfo] = useState(false)

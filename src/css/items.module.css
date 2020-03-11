@@ -20,6 +20,12 @@
 
 }
 
+.paracenter {
+  width: 80vw;
+  margin: 3rem auto;
+}
+
+
 .btn-feature {
   background: var(--primaryColor);
   color: var(--mainWhite);

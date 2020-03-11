@@ -35,6 +35,9 @@ const Effect = ({ effect }) => {
   mainImage = img
  } */
 
+
+ ////***** */Card Info and Image on main "Intervention" Page (3 CARDS across)
+
 let mainImage = image ? image[0].fluid : img
 
  return (
@@ -48,12 +51,12 @@ let mainImage = image ? image[0].fluid : img
   </div>
   
   <div className={styles.footer}>
-   <h3>{name || 'default value'}</h3>
+   <h4>{name || 'default value'}</h4>
    </div>
    
   <div>
    <FaBookReader className={styles.icon} />
-    <h5>intervention: {techniques[0] || 'default vlaue'}</h5>
+    <h5 className={styles.intervention}>intervention: {techniques[0] || 'default vlaue'}</h5>
    </div>
   
   

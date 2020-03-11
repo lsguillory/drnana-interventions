@@ -23,8 +23,8 @@
 
 .link {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 45%;
+  left: 48%;
   transform: translate(-50%, -50%);
   opacity: 0;
   text-transform: uppercase;
@@ -32,7 +32,7 @@
   color: var(--mainWhite);
   /*was 0.5 0.7*/
   border: 2px solid var(--mainWhite);
-  padding: 0.4rem 0.4rem;
+  padding: 0.1rem 0.1rem;
   display: inline-block;
   transition: var(--mainTransition);
   cursor: pointer;

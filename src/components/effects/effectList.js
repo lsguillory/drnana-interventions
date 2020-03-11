@@ -3,6 +3,10 @@ import styles from '../../css/items.module.css'
 import Effect from './effect'
 import Title from '../title'
 
+
+//****** */ effect page(s) -anxiety, stereotype, mind-wandering, etc. 
+//----main sset up import from graphlql ------effectjs
+
 export default class EffectList extends Component {
  
  state = {
@@ -20,7 +24,7 @@ export default class EffectList extends Component {
  render() {
   return (
     <section className={styles.effects}>
-      <Title title="stereotype" subtitle="effects | interventions" />
+      <Title title="ST effects |" subtitle=" interventions" />
       <div className={styles.center}>
         {this.state.sortedEffects.map(({ node }) => {
           return <Effect key={node.contentful_id} effect={node} />
